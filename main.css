@@ -26,8 +26,9 @@ li {
     font-family: monospace;
 }
 
-.custom-checkbox input:checked + label{
+.custom-checkbox input:checked + label {
     text-decoration: line-through;
+    text-decoration-style: double;
 }
      
 .light-theme{
