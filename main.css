@@ -1,7 +1,6 @@
 :root{
-    --green:#4bff4b;
-    --white:#ffffff;
-    --black:#000000;
+    --cor1:#ffffff;
+    --cor2:#000000;
 }
 
 *{
@@ -30,15 +29,14 @@ li {
     text-decoration: line-through;
     text-decoration-style: double;
 }
-     
-.light-theme{
-    --bg: var(--green);
-    --FontColor:var(--black);
+.dark-theme{
+    --bg: var(--cor2);
+    --FontColor:var(--cor1);
 }
 
-.dark-theme{
-    --bg: var(--black);
-    --FontColor:var(--green);
+.light-theme{
+    --bg: var(--cor1);
+    --FontColor:var(--cor2);
 }
 
 .btn{
@@ -56,5 +54,5 @@ li {
 .btn:focus{outline-style: none;}
 
 #icone{
-    color: #0400fb;
+    color:#fae900;
 }
