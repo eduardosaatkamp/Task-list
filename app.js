@@ -35,3 +35,34 @@ const dataFormatada = dataAtual.toLocaleDateString('pt-BR', options);
 
 // Define o texto do elemento <span> para exibir a data atual completa
 dataElement.textContent = dataFormatada;
+
+// Seleciona todos os elementos com a classe '.checkbox-group'
+const checkboxes = document.querySelectorAll('.checkbox-group');
+
+// Seleciona o elemento com o ID 'message'
+const messageElement = document.getElementById('message');
+
+// Função para verificar se todas as caixas de seleção estão marcadas
+function checkAllCheckboxes() {
+  let allChecked = true;
+
+  // Itera sobre cada elemento 'checkbox' da lista 'checkboxes'
+  checkboxes.forEach(checkbox => {
+    // Verifica se a caixa de seleção não está marcada
+    if (!checkbox.checked) {
+      allChecked = false;
+    }
+  });
+
+  // Atualiza a mensagem de texto do elemento 'messageElement'
+  if (allChecked) {
+    messageElement.textContent = 'Parabéns, você concluiu tudo!';
+  } else {
+    messageElement.textContent = '';
+  }
+}
+
+// Adiciona um event listener 'change' a cada elemento 'checkbox' da lista 'checkboxes'
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', checkAllCheckboxes);
+});
