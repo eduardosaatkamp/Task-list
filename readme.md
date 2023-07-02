@@ -2,9 +2,6 @@ Lista de tarefas elaborada por meio de um curso da Escola Virtual do Bradesco, c
 
 Tema novo<br>
 <img width="960" alt="ListaDeTarefas" src="https://github.com/eduardosaatkamp/Task-list-example/blob/Proposta-alterada-para-treino-prático-de-uso-de-GitHub/previewTask.PNG"> <br>
+
 Tema antigo<br>
 <img width="960" alt="ListaDeTarefas" src="https://raw.githubusercontent.com/eduardosaatkamp/Task-list-example/main/previewTaskList.PNG">
-
-
-
-
