@@ -1,15 +1,15 @@
-:root{
-    --cor1:#ffffff;
-    --cor2:#000000;
+:root {
+    --cor1: #ffffff;
+    --cor2: #000000;
 }
 
-*{
-    color:var(--FontColor);
+* {
+    color: var(--FontColor);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background:var(--bg);
+body {
+    background: var(--bg);
 }
 
 ul {
@@ -20,39 +20,66 @@ li {
     list-style: none;
     padding-bottom: 5px;
 }
-    
+
 #msg {
     font-family: monospace;
 }
 
-.custom-checkbox input:checked + label {
+.custom-checkbox input:checked+label {
     text-decoration: line-through;
     text-decoration-style: double;
 }
-.dark-theme{
+
+.dark-theme {
     --bg: var(--cor2);
-    --FontColor:var(--cor1);
+    --FontColor: var(--cor1);
 }
 
-.light-theme{
+.light-theme {
     --bg: var(--cor1);
-    --FontColor:var(--cor2);
+    --FontColor: var(--cor2);
 }
 
-.btn{
+#theme-btn {
     position: absolute;
     top: 20px;
     left: 400px;
     border-radius: 10%;
-    border:none;    
+    border: none;
 }
 
-.btn:hover{
+#theme-btn:hover {
     cursor: pointer;
 }
-        
-.btn:focus{outline-style: none;}
 
-#icone{
-    color:#fae900;
+#theme-btn:focus {
+    outline-style: none;
+}
+
+#tema {
+    color: #fae900;
+}
+
+#input-tarefa {
+    color: #000000;
+    margin-left: 37px;
+}
+
+.adc-task {
+    color: #000000;
+    margin-left: 10px;
+}
+
+#input-task input:checked+label {
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+
+#delete {
+    background-color: #999999;
+}
+
+#input-task h2 {
+    font-family: monospace;
+    margin-left: 37px;
 }

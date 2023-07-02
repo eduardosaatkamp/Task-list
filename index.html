@@ -41,17 +41,22 @@
 
             <li class="#msg">
                 <input type="checkbox" id="item5" class="checkbox-group">
-                <label for="item5">Enable switching the theme</label>  
+                <label for="item5">Enable switching the theme</label>
             </li>
             <p id="message"></p>
         </ul>
-   
     </div>
 
-  
+    <div id="input-task">
+        <h2>Task List com input:</h2>
+        <input type="text" name="input-tarefa" id="input-tarefa" placeholder="Informe uma Tarefa">
+        <button class="adc-task" onclick="adicionarTarefa()">Adicionar Tarefa</button>
 
-    <div class="btn">
-        <i id="icone" class="fa-solid fa-cloud-sun fa-2x"></i>
+        <ul id="task-list"></ul>
+    </div>
+
+    <div id="theme-btn">
+        <i id="tema" class="fa-solid fa-cloud-sun fa-2x"></i>
     </div>
 
     <script>alert('Olá, seja bem vindo! Última atualização feita em junho')
