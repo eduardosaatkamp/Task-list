@@ -15,51 +15,52 @@
 <body class="dark-theme">
     <div class="custom-checkbox">
         <ul>
-            <h1>Task List </h1>
+            <h1>Lista de Tarefas</h1>
+            <h4>Visualizada em
             <span id="data-atual"></span>
-            <h2 id="msg">Task Timeline:</h2>
+            .</h4>
+            <h2 id="msg">Em andamento:</h2>
 
             <li class="list">
                 <input type="checkbox" id="item1" class="checkbox-group">
-                <label for="item1">Add visual styles</label>
+                <label for="item1">Aprender HTML</label>
             </li>
 
             <li class="list">
                 <input type="checkbox" id="item2" class="checkbox-group">
-                <label for="item2">Add light and dark themes</label>
+                <label for="item2">Dominar CSS:</label>
             </li>
 
             <li class="list">
                 <input type="checkbox" id="item3" class="checkbox-group">
-                <label for="item3">Add visual styles</label>
+                <label for="item3">Familiarizar-se com JavaScript</label>
             </li>
 
             <li class="list">
                 <input type="checkbox" id="item4" class="checkbox-group">
-                <label for="item4">Add light and dark themes</label>
+                <label for="item4">Estudar um framework</label>
             </li>
 
             <li class="#msg">
                 <input type="checkbox" id="item5" class="checkbox-group">
-                <label for="item5">Enable switching the theme</label>
+                <label for="item5">Praticar desenvolvimento web em projetos </label>
             </li>
+            <li id="task-list"></li>
             <p id="message"></p>
         </ul>
+        
     </div>
 
     <div id="input-task">
-        <h2>Task List com input:</h2>
-        <input type="text" name="input-tarefa" id="input-tarefa" placeholder="Informe uma Tarefa">
-        <button class="adc-task" onclick="adicionarTarefa()">Adicionar Tarefa</button>
-
-        <ul id="task-list"></ul>
+        <input type="text" name="input-tarefa" id="input-tarefa" placeholder="Escreva uma Tarefa aqui">
+        <button class="adc-task" onclick="adicionarTarefa()">Adicionar Nova Tarefa</button>
     </div>
 
     <div id="theme-btn">
         <i id="tema" class="fa-solid fa-cloud-sun fa-2x"></i>
     </div>
 
-    <script>alert('Olá, seja bem vindo! Última atualização feita em junho')
+    <script>alert('Olá, seja bem vindo! Última atualização feita em julho')
     </script>
     <script src="app.js"></script>
     <noscript>Você precisa ativar o Javascript para visualizar o site por completo</noscript>
